@@ -17,7 +17,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="fixed w-full h-full min-h-screen bg-gradient-to-r from-[#0569E8] to-[#76D232] text-white overflow-x-hidden overflow-y-auto md:overflow-y-hidden">
+    <div className="fixed  w-full h-full min-h-screen bg-gradient-to-r from-[#0569E8] to-[#76D232] text-white overflow-x-hidden overflow-y-auto md:overflow-y-hidden">
       {/* Background elements - improved for better visual effect */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/5 filter blur-3xl" />
@@ -64,7 +64,7 @@ const LandingPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={handleJoinWaitlist}
-                className="bg-white text-[#0569E8] hover:bg-white/90 font-medium py-3 px-8 rounded-lg flex items-center justify-center transition-all group shadow-lg"
+                className="bg-white text-[#0569E8] hover:bg-white/90 py-3 px-8 rounded-lg flex items-center justify-center transition-all group shadow-lg font-semibold"
               >
                 Join the Waitlist
                 <ChevronRight size={18} className="ml-1 group-hover:translate-x-1 transition-transform" />
