@@ -1,9 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import videoWebm from "../assets/videos/background.webm";
 
-const BackgroundVideo = ({ handleEndVideo = () => {}, speed = 2.5 }) => {
-  const videoRef = useRef(null);
-  const videoError = useRef(false);
+interface BackgroundVideoProps {
+  handleEndVideo?: () => void;
+  speed?: number;
+}
+
+const BackgroundVideo: React.FC<BackgroundVideoProps> = ({ handleEndVideo = () => {}, speed = 2.5 }) => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const videoError = useRef<boolean>(false);
 
   useEffect(() => {
     if (videoRef.current) {

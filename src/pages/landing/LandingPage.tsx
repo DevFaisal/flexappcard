@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CardAnimation from "../../components/CardAnimation";
 import { motion } from "framer-motion";
-import { ChevronRight, CheckCircle, Lock } from "lucide-react";
+import { ChevronRight, Lock } from "lucide-react";
 
 const LandingPage = () => {
   const [isLoaded, setIsLoaded] = useState(false);

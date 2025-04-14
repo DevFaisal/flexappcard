@@ -60,8 +60,8 @@ const CardAnimation = () => {
 const ROTATION_RANGE = 25;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
-const EnhancedTiltCard = ({ cardData }) => {
-  const ref = useRef(null);
+const EnhancedTiltCard = ({ cardData }: any) => {
+  const ref = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
   // For card rotation
@@ -78,7 +78,7 @@ const EnhancedTiltCard = ({ cardData }) => {
   const transform = useMotionTemplate`perspective(1000px) rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
   const highlightTransform = useMotionTemplate`translate(${mouseX}px, ${mouseY}px)`;
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: any) => {
     if (!ref.current) return;
 
     const rect = ref.current.getBoundingClientRect();

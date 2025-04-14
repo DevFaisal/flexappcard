@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import HandleBGVideo from ".././provider/HandleBGVideo";
+import HandleBGVideo from "../provider/HandleBGVideo";
 
 const RootLayout = () => {
   return (
