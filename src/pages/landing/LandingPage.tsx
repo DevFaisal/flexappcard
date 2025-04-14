@@ -17,7 +17,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="fixed w-full h-full min-h-screen bg-gradient-to-br from-[#0569E8] to-[#76D232] text-white overflow-x-hidden overflow-y-auto md:overflow-y-hidden">
+    <div className="fixed w-full h-full min-h-screen bg-gradient-to-r from-[#0569E8] to-[#76D232] text-white overflow-x-hidden overflow-y-auto md:overflow-y-hidden">
       {/* Background elements - improved for better visual effect */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/5 filter blur-3xl" />
@@ -28,12 +28,12 @@ const LandingPage = () => {
 
       {/* COMING SOON banner */}
       <motion.div
-        className="sticky top-0 bg-black/20 backdrop-blur-sm py-2 z-30 text-center"
+        className="sticky top-0  backdrop-blur-sm py-2 z-30 text-center bg-black/25"
         initial={{ y: -50 }}
         animate={{ y: isLoaded ? 0 : -50 }}
         transition={{ duration: 0.7, delay: 1 }}
       >
-        <p className="font-bold tracking-widest text-sm sm:text-base">COMING SOON</p>
+        <p className="font-bold  tracking-widest text-sm sm:text-base">COMING SOON</p>
       </motion.div>
 
       <section className="flex flex-col lg:flex-row min-h-screen relative z-10 pt-10 pb-16">
@@ -46,7 +46,7 @@ const LandingPage = () => {
             className="mb-8 w-full max-w-lg"
           >
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img src="/logo.svg" alt="Flexcard logo" className="w-64 sm:w-72 md:w-80" />
+              <img src="/logo.svg" alt="Flexcard logo" className="w-64 sm:w-72 md:w-96" />
             </div>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-light max-w-md mb-6 text-center lg:text-left">

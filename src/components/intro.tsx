@@ -1,5 +1,3 @@
-import React from "react";
-
 const Intro = () => {
   return (
     <div className="fixed w-full h-screen bg-gradient-to-r from-[#0569E8] to-[#76D232] z-[9999]">
